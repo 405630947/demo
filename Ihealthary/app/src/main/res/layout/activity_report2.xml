@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ReportActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/purple"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_group_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_group_34"
+        android:stateListAnimator="@null"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_group_35"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/season"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="SEASON"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button6" />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="MONTH"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/button7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

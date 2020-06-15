@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Ihealthary</string>
+    <string name="帳號">帳號</string>
+    <string name="密碼">密碼</string>
+    <string name="生日">生日</string>
+    <string name="身高">身高</string>
+    <string name="體重">體重</string>
+    <string name="性別">性別</string>
+    <string name="年齡">年齡</string>
+    <string name="報表">報表</string>
+    <string name="運動">運動</string>
+    <string name="飲食">飲食</string>
+    <string name="設定">設定</string>
+    <string name="計算">計算</string>
+    <string name="年">年</string>
+    <string name="季">季</string>
+    <string name="月">月</string>
+    <string name="送出">送出</string>
+    <string name="每日運動消耗卡路里">每日運動消耗卡路里</string>
+    <string name="今日消耗量">今日消耗量</string>
+    <string name="今日攝取量">今日攝取量</string>
+    <string-array name="manlist">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="ladylist">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+    <string-array name="sports">
+        <item>快走、健走</item>
+        <item>慢跑</item>
+        <item>快跑</item>
+        <item>排球</item>
+        <item>騎腳踏車</item>
+        <item>太極拳</item>
+        <item>乒乓球</item>
+        <item>保齡球</item>
+        <item>棒壘球</item>
+        <item>高爾夫</item>
+        <item>羽毛球</item>
+        <item>溜直排輪</item>
+        <item>游泳</item>
+        <item>籃球(半場)</item>
+        <item>籃球(全場)</item>
+        <item>足球</item>
+        <item>爬岩</item>
+        <item>跳繩</item>
+    </string-array>
+    <string-array name="foods">
+        <item>小七三明治</item>
+        <item>小七便當</item>
+        <item>小七沙拉</item>
+        <item>小七涼麵</item>
+        <item>小七飯糰</item>
+        <item>全家麵包</item>
+        <item>全家甜點</item>
+        <item>全家飯糰</item>
+        <item>全家便當</item>
+        <item>SUBWAY</item>
+        <item>三商巧福</item>
+        <item>五十嵐</item>
+        <item>四海遊龍</item>
+        <item>壽司與飯糰類</item>
+        <item>小吃類</item>
+        <item>必勝客</item>
+        <item>手搖飲</item>
+        <item>摩斯</item>
+        <item>星巴克</item>
+        <item>水果類</item>
+        <item>永和豆漿</item>
+        <item>湯類</item>
+        <item>炸物類</item>
+        <item>甜點類</item>
+        <item>肉魚蛋類</item>
+        <item>肯德基</item>
+        <item>零食類</item>
+        <item>頂呱呱</item>
+        <item>飯類</item>
+        <item>飲料類</item>
+        <item>鬍鬚張</item>
+        <item>鮮芋仙</item>
+        <item>麥當勞</item>
+        <item>麵包類</item>
+        <item>麵類</item>
+        <item>義大利麵</item>
+    </string-array>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ExerciseActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/ic_group_36"
+        android:entries="@array/sports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="64dp"
+        android:text="消耗熱量(kcal)/公斤/小時"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="45dp"
+        android:text="輸入運動時間(小時)"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:onClick="calc"
+        android:text="@string/計算"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/今日消耗量"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_marginTop="672dp"
+        android:gravity="center_horizontal"
+        android:text=" 0"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <ImageView
+        android:id="@+id/sportpic"
+        android:layout_width="140dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="23dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/skcal"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="大卡"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/spinner2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
